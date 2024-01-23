@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./bootstrap-5.3.2/css/bootstrap.css">
+        <script src="./bootstrap-5.3.2/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet"
+            href="./fontawesome-free-6.5.1/css/fontawesome.css">
+        <link href="./fontawesome-free-6.5.1/css/brands.css" rel="stylesheet">
+        <link href="./fontawesome-free-6.5.1/css/solid.css" rel="stylesheet">
+        <script src="./fontawesome-free-6.5.1/js/fontawesome.js"></script>
+        <script src="./angular-1.8.2/angular.min.js"></script>
+        <link href="./css/index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body ng-app="myapp3" class="container">
+        <div ng-controller="myctr3">
+            <table class="table" >
+                <thead>
+                  <tr>
+                    <th scope="col">Hình</th>
+                    <th scope="col">Họ và tên</th>
+                    <th scope="col">Ngày sinh</th>
+                    <th scope="col"> Giới tinh</th>
+                    <th scope="col">Điểm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img src="./img/{{student[0].photo}}" width="50px" alt=""></th>
+                    <td>{{student[0].fullName}}</td>
+                    <td>{{student[0].birthday}}</td>
+                    <td>{{student[0].gender}}</td>
+                    <td>{{student[0].mark}} </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="./img/{{student[1].photo}}" width="50px" alt=""></th>
+                    <td>{{student[1].fullName}}</td>
+                    <td>{{student[1].birthday}}</td>
+                    <td>{{student[1].gender}}</td>
+                    <td>{{student[1].mark}} </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="./img/{{student[2].photo}}" width="50px" alt=""></th>
+                    <td>{{student[2].fullName}}</td>
+                    <td>{{student[2].birthday}}</td>
+                    <td>{{student[2].gender}}</td>
+                    <td>{{student[2].mark}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
